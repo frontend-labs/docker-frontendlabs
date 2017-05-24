@@ -1,0 +1,44 @@
+version: '2'
+
+services:
+  mysql:
+    image: lucydb
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_USER: root
+      MYSQL_DATABASE: frontend_wp
+    ports:
+      - 3320:3306
+    volumes:
+      - .volumes/mysql/:/var/lib/mysql/
+  # wpfrontend:
+  #   image: wp
+  #   volumes:
+  #     - ./source/blog-frontend/:/var/www/html/
+  #   ports:
+  #     - 81:80
+    # depends_on:
+    #   - mysql
+  # phpmyadmin:
+  #   image: phpmyadmin/phpmyadmin
+  #   environment:
+  #     PMA_HOST: apiwithloopback_mysql_1 # db host
+  #     PMA_USER: root
+  #     PMA_PASSWORD: 123456
+  #   ports:
+  #     - 85:80
+  #   depends_on:
+  #     - mysql
+  # api:
+  #   extends:
+  #     file: ./docker/compose/supply-api.yml
+  #     service: deps
+  #   environment:
+  #     NODE_ENV: development
+  #     DEBUG: node
+  #   ports:
+  #     - 3000:2999
+  #   command: yarn run start
+  #   depends_on:
+  #     - mysql
+  #     - phpmyadmin

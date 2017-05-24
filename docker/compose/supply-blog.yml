@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  import:
+    image: lucydb
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_USER: root
+      MYSQL_DATABASE: frontend_wp
+    ports:
+      - 3320:3306
+    volumes:
+      - .volumes/mysql/:/var/lib/mysql/
+      - ../../db/:/tmp/mysql/

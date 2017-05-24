@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  mysql:
+    image: lucydb
+    build:
+      context: ../lucydb/
+  # wpfrontend:
+  #   image: wp
+  #   build:
+  #     context: ../wp/
