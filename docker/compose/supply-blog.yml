@@ -10,5 +10,5 @@ services:
     ports:
       - 3320:3306
     volumes:
-      - .volumes/mysql/:/var/lib/mysql/
-      - ../../db/:/tmp/mysql/
+      - ../../.volumes/mysql/:/var/lib/mysql/
+      #- ../../db/:/tmp/mysql/
