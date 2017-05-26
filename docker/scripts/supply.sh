@@ -7,8 +7,9 @@ if [ ! -d .volumes ]; then
 fi
 
 if [ -f ./db/frontend_wp.sql.zip ]; then
+	unzip ./db/frontend_wp.sql.zip -d ./db/
 	echo "unzipping..."
-	unzip -f ./db/frontend_wp.sql.zip -d ./db/
+	sleep 1
 	docker-compose up -d mysql
 	echo "Running Mysql..."
 	sleep 15
