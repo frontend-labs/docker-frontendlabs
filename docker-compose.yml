@@ -11,6 +11,16 @@ services:
       - 3320:3306
     volumes:
       - .volumes/mysql/:/var/lib/mysql/
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      PMA_HOST: mysql # db host
+      PMA_USER: root
+      PMA_PASSWORD: 123456
+    ports:
+      - 86:80
+    depends_on:
+      - mysql
   # wpfrontend:
   #   image: wp
   #   volumes:
@@ -19,16 +29,6 @@ services:
   #     - 81:80
     # depends_on:
     #   - mysql
-  # phpmyadmin:
-  #   image: phpmyadmin/phpmyadmin
-  #   environment:
-  #     PMA_HOST: apiwithloopback_mysql_1 # db host
-  #     PMA_USER: root
-  #     PMA_PASSWORD: 123456
-  #   ports:
-  #     - 85:80
-  #   depends_on:
-  #     - mysql
   # api:
   #   extends:
   #     file: ./docker/compose/supply-api.yml
