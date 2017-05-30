@@ -9,6 +9,9 @@ build: ## Build images
 install: ## Install dependencies
 	sh ./docker/scripts/supply.sh
 
+backup: ## backup
+	sh ./docker/scripts/backup.sh
+
 up: ## Up services
 	docker-compose up -d
 
