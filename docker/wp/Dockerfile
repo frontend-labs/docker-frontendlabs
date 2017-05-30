@@ -1,4 +1,4 @@
-FROM php:7.1-fpm
+FROM php:5.6-apache
 
 # install the PHP extensions we need
 RUN set -ex; \
@@ -25,9 +25,8 @@ RUN { \
 		echo 'opcache.enable_cli=1'; \
 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
 
-VOLUME /var/www/html
+RUN a2enmod rewrite expires
 
-ENV WORDPRESS_VERSION 4.7.5
-ENV WORDPRESS_SHA1 fbe0ee1d9010265be200fe50b86f341587187302
+VOLUME /var/www/html/
 
-CMD ["php-fpm"]
+CMD ["apache2-foreground"]

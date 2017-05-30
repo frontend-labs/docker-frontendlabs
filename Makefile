@@ -9,8 +9,11 @@ build: ## Build images
 install: ## Install dependencies
 	sh ./docker/scripts/supply.sh
 
-backup: ## backup
-	sh ./docker/scripts/backup.sh
+blog-backup: ## backup
+	sh ./docker/scripts/blog-backup.sh
+
+blog-migration: ## migration
+	sh ./docker/scripts/blog-migration.sh
 
 up: ## Up services
 	docker-compose up -d

@@ -18,27 +18,14 @@ services:
       PMA_USER: root
       PMA_PASSWORD: 123456
     ports:
+      - 91:80
+    depends_on:
+      - mysql
+  wpfrontend:
+    image: wp
+    volumes:
+      - ./source/blog-frontend/:/var/www/html/
+    ports:
       - 90:80
     depends_on:
       - mysql
-  # wpfrontend:
-  #   image: wp
-  #   volumes:
-  #     - ./source/blog-frontend/:/var/www/html/
-  #   ports:
-  #     - 81:80
-    # depends_on:
-    #   - mysql
-  # api:
-  #   extends:
-  #     file: ./docker/compose/supply-api.yml
-  #     service: deps
-  #   environment:
-  #     NODE_ENV: development
-  #     DEBUG: node
-  #   ports:
-  #     - 3000:2999
-  #   command: yarn run start
-  #   depends_on:
-  #     - mysql
-  #     - phpmyadmin

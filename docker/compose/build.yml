@@ -5,7 +5,7 @@ services:
     image: lucydb
     build:
       context: ../lucydb/
-  # wpfrontend:
-  #   image: wp
-  #   build:
-  #     context: ../wp/
+  wpfrontend:
+    image: wp
+    build:
+      context: ../wp/
