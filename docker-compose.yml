@@ -18,7 +18,7 @@ services:
       PMA_USER: root
       PMA_PASSWORD: 123456
     ports:
-      - 86:80
+      - 90:80
     depends_on:
       - mysql
   # wpfrontend:
