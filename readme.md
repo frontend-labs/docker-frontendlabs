@@ -20,7 +20,9 @@ make setup
 make blog-migration
 ```
 
-Luego, descarga la configuración php para wp desde aquí: [https://drive.google.com/file/d/0B2_cebtl-r3NaG1GVjlKSkhWaTQ/view?usp=sharing](https://drive.google.com/file/d/0B2_cebtl-r3NaG1GVjlKSkhWaTQ/view?usp=sharing) y guardalo dentro de la carpeta: ./source/blog-frontend/
+Luego, descarga la configuración php para wp desde aquí: [https://drive.google.com/file/d/0B2_cebtl-r3NaG1GVjlKSkhWaTQ/view?usp=sharing](https://drive.google.com/file/d/0B2_cebtl-r3NaG1GVjlKSkhWaTQ/view?usp=sharing) y tambien descarga el .htaccess desde aquí: https://drive.google.com/file/d/0B2_cebtl-r3NeUFXNFhhcTdCREU/view?usp=sharing y guarda ambos archivos dentro de la carpeta: ./source/blog-frontend/
+
+Si te pide que sobreescribas, dale.
 
 ## Run
 ```
