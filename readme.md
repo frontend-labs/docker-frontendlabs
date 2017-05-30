@@ -3,6 +3,13 @@
 
 Frontendlabs site.
 
+## Pre-Setup
+```
+mkdir -p ./db/blog/zip
+```
+
+Luego, descarga el ultimo backup de la base de datos desde aquí:  [https://drive.google.com/file/d/0B2_cebtl-r3NeUlWWHNBTGZhUzQ/view?usp=sharing](https://drive.google.com/file/d/0B2_cebtl-r3NeUlWWHNBTGZhUzQ/view?usp=sharing) y guardalo dentro de la carpeta: ./db/blog/zip/
+
 ## Setup
 ```
 make setup
@@ -12,6 +19,8 @@ make setup
 ```
 make blog-migration
 ```
+
+Luego, descarga la configuración php para wp desde aquí: [https://drive.google.com/file/d/0B2_cebtl-r3NaG1GVjlKSkhWaTQ/view?usp=sharing](https://drive.google.com/file/d/0B2_cebtl-r3NaG1GVjlKSkhWaTQ/view?usp=sharing) y guardalo dentro de la carpeta: ./source/blog-frontend/
 
 ## Run
 ```

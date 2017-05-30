@@ -1,10 +1,11 @@
 .volumes/
+.git/
 .DS_Store
 node_modules/
 npm-debug.log
 *-error.log
 yarn.lock
-*.sql
 *.zip
+./db/blog/bk/
 source/blog-frontend/*
 wp-env.php
