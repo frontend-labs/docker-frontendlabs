@@ -15,16 +15,20 @@ Luego, descarga el ultimo backup de la base de datos desde aquí:  [https://driv
 make setup
 ```
 
-## Local Migration
+## Migration
 ```
 make blog-migration
 ```
 
-Luego, descarga la configuración php para wp desde aquí: [https://drive.google.com/file/d/0B2_cebtl-r3NaG1GVjlKSkhWaTQ/view?usp=sharing](https://drive.google.com/file/d/0B2_cebtl-r3NaG1GVjlKSkhWaTQ/view?usp=sharing) y tambien descarga el .htaccess desde aquí: [https://drive.google.com/file/d/0B2_cebtl-r3NeUFXNFhhcTdCREU/view?usp=sharing](https://drive.google.com/file/d/0B2_cebtl-r3NeUFXNFhhcTdCREU/view?usp=sharing) y guarda ambos archivos dentro de la carpeta: ./source/blog-frontend/
+Luego, descarga los siguientes archivos:
 
-Si el archivo .htaccess baja sin el punto adelante, renombras el archivo a: .htaccess
+- [wp-env.php](https://drive.google.com/file/d/0B2_cebtl-r3NaG1GVjlKSkhWaTQ/view?usp=sharing)
+- [wp-config.php](https://drive.google.com/file/d/0B2_cebtl-r3NckRWZE1iUVNJSlE/view?usp=sharing)
+- [.htaccess](https://drive.google.com/file/d/0B2_cebtl-r3NeUFXNFhhcTdCREU/view?usp=sharing)
 
-Y si te pide que sobreescribas, dale nomas.
+y finalmente sobreescribe estos archivos dentro de la carpeta: **./source/blog-frontend/**
+
+Cuando el archivo **.htaccess** baja desde drive se guarda sin el punto adelante(htaccess), entonces solo lo tienes que renombrar a: **.htaccess**
 
 ## Run
 ```
