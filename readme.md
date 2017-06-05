@@ -7,7 +7,7 @@ Sigue todos estos pasos para correr el sitio de forma local.
 
 ## 1.- Pre-Setup
 ```
-mkdir -p ./db/blog/zip
+mkdir -p ./db/blog/zip/
 ```
 
 Luego, descarga el ultimo backup de la base de datos desde aquí:  [Latest](https://drive.google.com/file/d/0B2_cebtl-r3NQkRxZFVUNEx0bEU/view?usp=sharing) y guardalo dentro de la carpeta: **./db/blog/zip/**
