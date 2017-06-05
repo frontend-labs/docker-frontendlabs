@@ -3,34 +3,32 @@
 
 Frontendlabs site.
 
-## Pre-Setup
+Sigue todos estos pasos para correr el sitio de forma local.
+
+## 1.- Pre-Setup
 ```
 mkdir -p ./db/blog/zip
 ```
 
 Luego, descarga el ultimo backup de la base de datos desde aquí:  [https://drive.google.com/file/d/0B2_cebtl-r3NeUlWWHNBTGZhUzQ/view?usp=sharing](https://drive.google.com/file/d/0B2_cebtl-r3NeUlWWHNBTGZhUzQ/view?usp=sharing) y guardalo dentro de la carpeta: ./db/blog/zip/
 
-## Setup
+## 2.- Setup
 ```
 make setup
 ```
 
-## Migration
+## 3.- Migration
 ```
 make blog-migration
 ```
 
-Luego, descarga los siguientes archivos:
+Luego, descarga el siguiente archivo:
 
-- [wp-env.php](https://drive.google.com/file/d/0B2_cebtl-r3NaG1GVjlKSkhWaTQ/view?usp=sharing)
-- [wp-config.php](https://drive.google.com/file/d/0B2_cebtl-r3NckRWZE1iUVNJSlE/view?usp=sharing)
-- [.htaccess](https://drive.google.com/file/d/0B2_cebtl-r3NeUFXNFhhcTdCREU/view?usp=sharing)
+- [wp-env.php](https://drive.google.com/file/d/0B2_cebtl-r3NdXl6U3I3Z0lwR3M/view?usp=sharing)
 
-y finalmente sobreescribe estos archivos dentro de la carpeta: **./source/blog-frontend/**
+y finalmente sobreescribe este archivo dentro de la carpeta: **./source/blog-frontend/**
 
-Cuando el archivo **.htaccess** baja desde drive se guarda sin el punto adelante(htaccess), entonces solo lo tienes que renombrar a: **.htaccess**
-
-## Run
+## 4.- Run
 ```
 make up
 ```

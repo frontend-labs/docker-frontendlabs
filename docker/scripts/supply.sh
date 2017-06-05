@@ -6,7 +6,7 @@ if [ ! -d .volumes ]; then
   chmod -R 775 .volumes
 fi
 
-if [ -f ./db/blog/zip/frontend_wp.sql.zip ]; then
+if [ ! -f ./db/blog/zip/frontend_wp.sql ]; then
 	unzip -o ./db/blog/zip/frontend_wp.sql.zip -d ./db/blog/zip/
 	echo "unzipping..."
 	sleep 1
@@ -25,4 +25,5 @@ if [ ! -d ./source ]; then
   chmod -R 775 ./source
 	git clone git@github.com:frontend-labs/site.git ./source/blog-frontend
 	rm -rf ./source/blog-frontend/.git/
+	wget https://gist.githubusercontent.com/jansanchez/b848a0f60a0f53eba96b1693facbaff1/raw/e97bc43369a06192c8c519bcca522c40ef342276/.htaccess -O source/blog-frontend/.htaccess
 fi
