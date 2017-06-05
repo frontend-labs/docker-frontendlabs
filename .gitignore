@@ -6,6 +6,7 @@ npm-debug.log
 *-error.log
 yarn.lock
 *.zip
+frontend_wp.sql
 ./db/blog/bk/
 source/blog-frontend/*
 wp-env.php
