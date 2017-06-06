@@ -27,7 +27,7 @@ make blog-migration
 
 Luego, descarga el siguiente archivo:
 
-- [wp-env.php](https://drive.google.com/file/d/0B2_cebtl-r3NdTZHWUVPczlJbkk/view?usp=sharing)
+- [wp-env.php](https://drive.google.com/file/d/0B2_cebtl-r3NV19SVGpJY05fakU/view?usp=sharing)
 
 y finalmente sobreescribe este archivo dentro de la carpeta: **./source/blog-frontend/**
 
