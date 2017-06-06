@@ -54,3 +54,11 @@ Para ver todas las opciones que tiene nuestro make file, tan solo escribe:
 ```
 make
 ```
+
+## Reiniciar la instalación
+
+Para reiniciar la instalación debes correr los siguientes comandos:
+
+```
+rm -rf .volumes/ && rm -rf db/blog/zip/frontend_wp.sql
+```
